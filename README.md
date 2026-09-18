@@ -31,6 +31,6 @@ We are very grateful for these excellent works: [DQ-DETR](https://github.com/hoi
 
 ## Contact
 
-Feel free to contact me if there is any question. (Shuhao Xue: [xsh371328@gmail.com](xsh371328@gmail.com), Lei Huang: [huangl@ouc.edu.cn](mailto:huangl@ouc.edu.cn))
+Feel free to contact me if there is any question. (Shuhao Xue: [xsh371328@gmail.com](mailto:xsh371328@gmail.com), Lei Huang: [huangl@ouc.edu.cn](mailto:huangl@ouc.edu.cn))
 
 ---
