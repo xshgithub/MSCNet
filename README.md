@@ -19,3 +19,18 @@ bash install.sh
 ```sh
 CUDA_VISIBLE_DEVICES=5,6,7 bash scripts/DQ.sh /path/to/your/dataset
 ```
+
+## Eval models
+```sh
+bash scripts/DQ_eval.sh /path/to/your/dataset /path/to/your/checkpoint
+```
+## Acknowledgments
+
+We are very grateful for these excellent works: [DQ-DETR](https://github.com/hoiliu-0801/DQ-DETR), [DINO](https://github.com/IDEA-Research/DINO). Please follow their respective licenses for usage and redistribution. Thanks for their awesome works.
+
+
+## Contact
+
+Feel free to contact me if there is any question. (Shuhao Xue: [xsh371328@gmail.com](xsh371328@gmail.com), Lei Huang: [huangl@ouc.edu.cn](mailto:huangl@ouc.edu.cn))
+
+---
