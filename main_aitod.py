@@ -26,9 +26,7 @@ from engine import evaluate, train_one_epoch
 
 def get_args_parser():
     parser = argparse.ArgumentParser('Set transformer detector', add_help=False)
-    # parser.add_argument('--config_file', '-c', type=str, default='/home/haida/xsh/DWT/config/multi_sea.py', )
-    parser.add_argument('--config_file', '-c', type=str, default='/data1/huanglab/xsh/dqdetr/config/multi_sea.py',)
-    # parser.add_argument('--config_file', '-c', type=str, default='/data1/huanglab/xsh/dqdetr/config/DQ_5scale.py', )
+    parser.add_argument('--config_file', '-c', type=str, default='',)
     parser.add_argument('--options',
         nargs='+',
         action=DictAction,
@@ -37,22 +35,20 @@ def get_args_parser():
 
     # dataset parameters
     parser.add_argument('--dataset_file', default='sea')
-    parser.add_argument('--coco_path', type=str, default='/data1/huanglab/xsh/dqdetr/dataset_A')
-    # parser.add_argument('--coco_path', type=str, default=r'D:\pycharm\datasets\sea')
-    # parser.add_argument('--coco_path', type=str, default='/home/haida/xsh/DWT/dataset')
+    parser.add_argument('--coco_path', type=str, default='')
     parser.add_argument('--coco_panoptic_path', type=str) 
     parser.add_argument('--remove_difficult', action='store_true')
     parser.add_argument('--fix_size', action='store_true')
 
     # training parameters
-    parser.add_argument('--output_dir', default='output/A',
+    parser.add_argument('--output_dir', default='output',
                         help='path where to save, empty for no saving')
     parser.add_argument('--note', default='',
                         help='add some notes to the experiment')
     parser.add_argument('--device', default='cuda',
                         help='device to use for training / testing')
     parser.add_argument('--seed', default=42, type=int)
-    parser.add_argument('--resume', default='/data1/huanglab/xsh/dqdetr/output/sla_ssh_sst_chl/50.5_85.6.pth', help='resume from checkpoint')
+    parser.add_argument('--resume', default='', help='resume from checkpoint')
     parser.add_argument('--pretrain_model_path', help='load from other checkpoint')
     parser.add_argument('--finetune_ignore', type=str, nargs='+')
     parser.add_argument('--start_epoch', default=0, type=int, metavar='N',
